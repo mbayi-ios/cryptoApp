@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
 ## Video-5
-- Displaying List of coins fetched from API
+- Downloading coins using view model and data service class-combine
