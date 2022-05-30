@@ -19,6 +19,19 @@ struct HomeView: View {
             VStack {
                 homeHeader
 
+                HStack {
+                    Text("Coins")
+                    Spacer()
+                    if showPortfolio {
+                        Text("Holdings")
+                    }
+                    Text("Price")
+                        .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+                }
+                .font(.caption)
+                .foregroundColor(Color.theme.secondaryText)
+                .padding()
+
                 if !showPortfolio {
                     allCoinsList
                         .transition(.move(edge: .leading))
