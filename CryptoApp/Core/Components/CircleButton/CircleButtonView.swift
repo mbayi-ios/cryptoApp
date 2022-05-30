@@ -21,6 +21,7 @@ struct CircleButtonView: View {
                 .foregroundColor(Color.theme.background)
             )
             .shadow(color: Color.theme.accent.opacity(0.25), radius: 10, x: 0, y: 0)
+            .padding()
     }
 }
 
@@ -32,7 +33,7 @@ struct CircleButtonView_Previews: PreviewProvider {
 
             CircleButtonView(iconName: "plus")
                 .previewLayout(.sizeThatFits)
-                .colorScheme(.dark)
+                .preferredColorScheme(.dark)
 
         }
     }
