@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-7
-- Downloading coins using view model and data service class-combine
+## Video-8
+- Downloading Coin Images using Combine and Networking Layer
