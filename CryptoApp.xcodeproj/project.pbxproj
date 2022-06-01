@@ -30,6 +30,7 @@
 		89C0D6902847515400C9BF04 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D68F2847515400C9BF04 /* UIApplication.swift */; };
 		89C0D69428476B8600C9BF04 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D69328476B8600C9BF04 /* StatisticView.swift */; };
 		89C0D69628476C8A00C9BF04 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D69528476C8A00C9BF04 /* StatisticModel.swift */; };
+		89C0D6982847834800C9BF04 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D6972847834700C9BF04 /* HomeStatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		89C0D68F2847515400C9BF04 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		89C0D69328476B8600C9BF04 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		89C0D69528476C8A00C9BF04 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		89C0D6972847834700C9BF04 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				892BA7EE282E834E00AE3AEB /* HomeView.swift */,
 				8941D8E22844E26E00885CCA /* CoinRowView.swift */,
+				89C0D6972847834700C9BF04 /* HomeStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				892BA7E9282E7E0700AE3AEB /* Color.swift in Sources */,
 				89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */,
 				8941D8EF28451DFD00885CCA /* NetworkingManager.swift in Sources */,
+				89C0D6982847834800C9BF04 /* HomeStatsView.swift in Sources */,
 				892BA7F5282EAD0800AE3AEB /* CircleButtonAnimationView.swift in Sources */,
 				8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */,
 				8941D8E52844E2EB00885CCA /* PreviewProvider.swift in Sources */,

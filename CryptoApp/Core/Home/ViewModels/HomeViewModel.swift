@@ -10,6 +10,14 @@ import Combine
 
 class HomeViewModel: ObservableObject {
 
+    @Published  var  statistcs: [StatisticModel] = [
+        StatisticModel(title: "Title", value: "value", percentageChange: 1),
+        StatisticModel(title: "Title", value: "value"),
+        StatisticModel(title: "Title", value: "value"),
+        StatisticModel(title: "Title", value: "value", percentageChange: -15),
+    ]
+
+
     @Published var allCoins: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
 
