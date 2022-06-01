@@ -26,6 +26,9 @@ struct SearchBarView: View {
                         .offset(x: 10)
                         .foregroundColor(Color.theme.accent)
                         .opacity(searchText.isEmpty ? 0.0 : 1.0)
+                        .onTapGesture {
+                            searchText = ""
+                        }
                     ,alignment: .trailing
 
                 )
@@ -43,7 +46,15 @@ struct SearchBarView: View {
 
 struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBarView()
-            .preferredColorScheme(.dark)
+        Group {
+            SearchBarView()
+                .preferredColorScheme(.light)
+                .previewLayout(.sizeThatFits)
+            
+            SearchBarView()
+                .preferredColorScheme(.dark)
+                .previewLayout(.sizeThatFits)
+        }
+
     }
 }
