@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-10
-- Creating custom and reusable search bar
+## Video-11
+- filtering data based on search bar text using combine
