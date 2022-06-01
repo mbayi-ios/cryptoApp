@@ -18,6 +18,8 @@ struct HomeView: View {
 
             VStack {
                 homeHeader
+
+                SearchBarView(searchText: <#T##Binding<String>#>)
                 columnTitles
                 
                 if !showPortfolio {
