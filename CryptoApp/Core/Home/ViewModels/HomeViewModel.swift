@@ -27,6 +27,7 @@ class HomeViewModel: ObservableObject {
         //updateds allCoins
         $searchText
             .combineLatest(dataService.$allCoins)
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
             .map(filterCoins)
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
