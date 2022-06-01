@@ -26,6 +26,7 @@
 		8941D8F42845305400885CCA /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941D8F32845305400885CCA /* CoinImageService.swift */; };
 		8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941D8F5284532E600885CCA /* CoinImageViewModel.swift */; };
 		8941D8F828454CDD00885CCA /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941D8F728454CDD00885CCA /* LocalFileManager.swift */; };
+		89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D68D28474A9900C9BF04 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		8941D8F32845305400885CCA /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		8941D8F5284532E600885CCA /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		8941D8F728454CDD00885CCA /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		89C0D68D28474A9900C9BF04 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		892BA7F0282E85B800AE3AEB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				89C0D68C28474A7800C9BF04 /* SearchBar */,
 				8941D8F028452DB100885CCA /* CoinImage */,
 				892BA7F1282E85CF00AE3AEB /* CircleButton */,
 			);
@@ -198,6 +201,14 @@
 				8941D8F5284532E600885CCA /* CoinImageViewModel.swift */,
 			);
 			path = CoinImage;
+			sourceTree = "<group>";
+		};
+		89C0D68C28474A7800C9BF04 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				89C0D68D28474A9900C9BF04 /* SearchBarView.swift */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 				892BA7DA282E74D100AE3AEB /* CryptoAppApp.swift in Sources */,
 				892BA7F3282E85DF00AE3AEB /* CircleButtonView.swift in Sources */,
 				892BA7E9282E7E0700AE3AEB /* Color.swift in Sources */,
+				89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */,
 				8941D8EF28451DFD00885CCA /* NetworkingManager.swift in Sources */,
 				892BA7F5282EAD0800AE3AEB /* CircleButtonAnimationView.swift in Sources */,
 				8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */,
