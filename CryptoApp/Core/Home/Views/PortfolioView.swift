@@ -46,6 +46,9 @@ struct PortfolioView: View {
                                 Text(getCurrentValue().asCurrencyWith2Decimals())
                             }
                         }
+                        .animation(.none)
+                        .padding()
+                        .font(.headline)
                     }
 
                 }
@@ -87,7 +90,7 @@ extension PortfolioView {
                         )
                 }
             }
-            .padding(.vertical, 4)
+            .frame(height: 120)
             .padding(.leading)
         })
     }
