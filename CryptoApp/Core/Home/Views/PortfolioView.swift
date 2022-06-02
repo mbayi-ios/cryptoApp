@@ -15,6 +15,7 @@ struct PortfolioView: View {
 
     @State private var selectedCoin: CoinModel? = nil
     @State private var quantityText: String = ""
+    @State private var showCheckmark: Bool = false
     
     var body: some View {
         NavigationView {
@@ -38,8 +39,18 @@ struct PortfolioView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack(spacing: 10) {
                         Image(systemName: "checkmark")
-                        Text("Save".uppercased())
+                            .opacity(showCheckmark ? 1.0 : 0.0)
+                        Button(action: {
+
+                        }, label: {
+                            Text("Save".uppercased())
+                        })
+                            .opacity(
+                                (selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
+                            )
+
                     }
+                    .font(.headline)
                 }
             })
         }
