@@ -18,10 +18,11 @@ struct PortfolioView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 0) {
                     SearchBarView(searchText: $vm.searchText)
-                    ScrollView(.horizontal, showsIndicators: true, content: {
+                    ScrollView(.horizontal, showsIndicators: false, content: {
                         LazyHStack(spacing: 10) {
                             ForEach(vm.allCoins) { coin in
                                 CoinLogoView(coin: coin)
+                                    .frame(width:75)
                             }
                         }
                     })
