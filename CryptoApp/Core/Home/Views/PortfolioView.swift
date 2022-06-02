@@ -35,6 +35,12 @@ struct PortfolioView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     XmarkButton(presentationMode: presentationMode)
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    HStack(spacing: 10) {
+                        Image(systemName: "checkmark")
+                        Text("Save".uppercased())
+                    }
+                }
             })
         }
     }
