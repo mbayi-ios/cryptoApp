@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8915519A2848AE83006434A2 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891551992848AE83006434A2 /* MarketDataModel.swift */; };
+		8915519C2848B371006434A2 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915519B2848B371006434A2 /* MarketDataService.swift */; };
 		892BA7DA282E74D100AE3AEB /* CryptoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BA7D9282E74D100AE3AEB /* CryptoAppApp.swift */; };
 		892BA7DC282E74D100AE3AEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BA7DB282E74D100AE3AEB /* ContentView.swift */; };
 		892BA7DE282E74D300AE3AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892BA7DD282E74D300AE3AEB /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		891551992848AE83006434A2 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
+		8915519B2848B371006434A2 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		892BA7D6282E74D100AE3AEB /* Crypto Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892BA7D9282E74D100AE3AEB /* CryptoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAppApp.swift; sourceTree = "<group>"; };
 		892BA7DB282E74D100AE3AEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				8941D8EB28450C6600885CCA /* coinDataService.swift */,
 				8941D8F32845305400885CCA /* CoinImageService.swift */,
+				8915519B2848B371006434A2 /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */,
 				8941D8EF28451DFD00885CCA /* NetworkingManager.swift in Sources */,
 				89C0D6982847834800C9BF04 /* HomeStatsView.swift in Sources */,
+				8915519C2848B371006434A2 /* MarketDataService.swift in Sources */,
 				892BA7F5282EAD0800AE3AEB /* CircleButtonAnimationView.swift in Sources */,
 				8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */,
 				8941D8E52844E2EB00885CCA /* PreviewProvider.swift in Sources */,
