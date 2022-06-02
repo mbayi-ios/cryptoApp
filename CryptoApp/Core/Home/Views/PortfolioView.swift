@@ -12,6 +12,8 @@ struct PortfolioView: View {
     @Environment(\.presentationMode) var presentationMode
 
     @EnvironmentObject private var vm: HomeViewModel
+
+    @State private var selectedCoin: CoinModel? = nil
     
     var body: some View {
         NavigationView {
@@ -24,9 +26,15 @@ struct PortfolioView: View {
                                 CoinLogoView(coin: coin)
                                     .frame(width:75)
                                     .padding(4)
+                                    .onTapGesture {
+                                        withAnimation(.easeIn){
+                                            selectedCoin = coin
+                                        }
+                                    }
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.theme.green, lineWidth: 1)
+                                            .stroke( selectedCoin?.id == coin.id ? Color.theme.green: Color.clear,
+                                                    lineWidth: 1)
                                     )
                             }
                         }
