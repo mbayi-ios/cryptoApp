@@ -37,20 +37,7 @@ struct PortfolioView: View {
                     XmarkButton(presentationMode: presentationMode)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    HStack(spacing: 10) {
-                        Image(systemName: "checkmark")
-                            .opacity(showCheckmark ? 1.0 : 0.0)
-                        Button(action: {
-
-                        }, label: {
-                            Text("Save".uppercased())
-                        })
-                            .opacity(
-                                (selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
-                            )
-
-                    }
-                    .font(.headline)
+                    trailingNavBarButtons
                 }
             })
         }
@@ -122,4 +109,49 @@ extension PortfolioView {
         }
         return 0
     }
+
+    private var trailingNavBarButtons: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "checkmark")
+                .opacity(showCheckmark ? 1.0 : 0.0)
+            Button(action: {
+                saveButtonPressed()
+            }, label: {
+                Text("Save".uppercased())
+            })
+                .opacity(
+                    (selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
+                )
+
+        }
+        .font(.headline)
+    }
+
+    private func saveButtonPressed(){
+        guard let coin = selectedCoin else { return }
+
+        //save to portfolio
+
+        // show checkmark
+
+        withAnimation(.easeIn) {
+            showCheckmark = true
+            removeSelectedCoin()
+        }
+        //hide keyboard
+        UIApplication.shared.endEditing()
+
+        //hide checkmark
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            withAnimation(.easeOut) {
+                showCheckmark = false
+            }
+        }
+    }
+
+    private func removeSelectedCoin(){
+        selectedCoin = nil
+        vm.searchText = ""
+    }
+
 }
