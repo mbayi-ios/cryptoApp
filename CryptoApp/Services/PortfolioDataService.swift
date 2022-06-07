@@ -31,4 +31,10 @@ class PortfolioDataService {
             print("error fetching portfolio entities. \(error)")
         }
     }
+
+    private func add(coin: CoinModel, amount: Double) {
+        let entity = PortfolioEntity(context: container.viewContext)
+        entity.coinID = coin.id
+        entity.amount = amount
+    }
 }
