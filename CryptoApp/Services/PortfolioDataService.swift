@@ -23,6 +23,22 @@ class PortfolioDataService {
             }
         }
     }
+    
+    //MARK: Public Function
+    func upatePortfolio(coin: CoinModel, amount: Double) {
+        //check if coin is already in portfolio
+        if let entity = savedEntities.first(where: {$0.coinID == coin.id}) {
+            if amount > 0 {
+                update(entity:entity, amount: amount)
+            } else {
+                delete(entity: entity)
+            }
+        } else {
+            add(coin: coin, amount: amount)
+        }
+    }
+
+    // MARK: Private function
     private func getPortfolio() {
         let request  = NSFetchRequest<PortfolioEntity>(entityName: entityName)
         do {
