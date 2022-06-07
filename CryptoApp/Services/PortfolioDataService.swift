@@ -21,9 +21,10 @@ class PortfolioDataService {
             if let error = error {
                 print("error loading core data! \(error)")
             }
+            self.getPortfolio()
         }
     }
-    
+
     //MARK: Public Function
     func upatePortfolio(coin: CoinModel, amount: Double) {
         //check if coin is already in portfolio
