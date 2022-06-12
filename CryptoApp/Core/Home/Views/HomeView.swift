@@ -116,10 +116,8 @@ extension HomeView {
                     .rotationEffect(Angle(degrees: vm.sortOption == .rank ? 0: 180))
             }
             .onTapGesture {
-                if vm.sortOption == .rank {
-                    vm.sortOption = .rankReversed
-                } else {
-                    vm.sortOption = .rank
+                withAnimation(.default) {
+                    vm.sortOption = vm.sortOption == .rank ? .rankReversed: .rank
                 }
             }
 
@@ -130,8 +128,11 @@ extension HomeView {
                     Image(systemName: "chevron.down")
                         .opacity((vm.sortOption == .holdings || vm.sortOption == .holdingsReversed) ? 1.0 : 0.0)
                         .rotationEffect(Angle(degrees: vm.sortOption == .holdings ? 0: 180))
-
-
+                }
+                .onTapGesture {
+                    withAnimation(.default) {
+                        vm.sortOption = vm.sortOption == .holdings ? .holdingsReversed: .holdings
+                    }
                 }
             }
             HStack(spacing: 4) {
@@ -142,6 +143,11 @@ extension HomeView {
 
             }
             .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            .onTapGesture {
+                withAnimation(.default) {
+                    vm.sortOption = vm.sortOption == .price ? .priceReversed: .price
+                }
+            }
 
             Button(action: {
                 withAnimation(.linear(duration: 2.0)){
