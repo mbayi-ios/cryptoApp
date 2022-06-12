@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-17
-- Adding ability to sort coins, either price, marketcap
+## Video-18
+- Adding ability to click on a coin and move into detail view of the coin
