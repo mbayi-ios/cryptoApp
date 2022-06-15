@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890765702859A0AD0087FBA8 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8907656F2859A0AD0087FBA8 /* CoinDetailModel.swift */; };
 		8915519A2848AE83006434A2 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891551992848AE83006434A2 /* MarketDataModel.swift */; };
 		8915519C2848B371006434A2 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915519B2848B371006434A2 /* MarketDataService.swift */; };
 		8915519E2848D06C006434A2 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915519D2848D06C006434A2 /* PortfolioView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8907656F2859A0AD0087FBA8 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		891551992848AE83006434A2 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		8915519B2848B371006434A2 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		8915519D2848D06C006434A2 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8941D8E02844C78800885CCA /* CoinModel.swift */,
+				8907656F2859A0AD0087FBA8 /* CoinDetailModel.swift */,
 				89C0D69528476C8A00C9BF04 /* StatisticModel.swift */,
 				891551992848AE83006434A2 /* MarketDataModel.swift */,
 				8916F4D6284F585C008F5688 /* PortfolioContainer.xcdatamodeld */,
@@ -373,6 +376,7 @@
 				8915519E2848D06C006434A2 /* PortfolioView.swift in Sources */,
 				8941D8E72844F56700885CCA /* Double.swift in Sources */,
 				8941D8F42845305400885CCA /* CoinImageService.swift in Sources */,
+				890765702859A0AD0087FBA8 /* CoinDetailModel.swift in Sources */,
 				8941D8E12844C78900885CCA /* CoinModel.swift in Sources */,
 				8916F4DA284F58EF008F5688 /* PortfolioDataService.swift in Sources */,
 			);
