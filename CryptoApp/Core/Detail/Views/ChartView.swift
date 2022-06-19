@@ -29,6 +29,7 @@ struct ChartView: View {
         VStack {
             chartView
                 .frame(height: 200)
+                .background(chartBackground)
         }
     }
 }
@@ -62,6 +63,16 @@ extension ChartView {
 
             }
             .stroke(lineColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
+        }
+    }
+
+    private var chartBackground: some View{
+        VStack {
+            Divider()
+            Spacer()
+            Divider()
+            Spacer()
+            Divider()
         }
     }
 }
