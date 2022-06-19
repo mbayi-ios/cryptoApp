@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-20
-- updating DetailView with the downloadable data
+## Video-21
+- Adding custom line chart to display historical Price Data
