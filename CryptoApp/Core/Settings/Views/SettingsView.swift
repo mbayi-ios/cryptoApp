@@ -93,7 +93,7 @@ extension SettingsView{
                     .frame(width: 100, height: 100)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
 
-                Text("Developed by Nick, it uses swift UI, the project benefits from multithreading, publishers/subscribers, data persistance")
+                Text("Developed by amby, it uses swift UI, the project benefits from multithreading, publishers/subscribers, data persistance")
                     .font(.callout)
                     .fontWeight(.medium)
                     .foregroundColor(Color.theme.accent)
