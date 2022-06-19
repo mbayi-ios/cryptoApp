@@ -54,13 +54,7 @@ struct DetailView: View {
         .navigationTitle(vm.coin.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                HStack {
-                    Text(vm.coin.symbol.uppercased())
-                        .font(.headline)
-                        .foregroundColor(Color.theme.secondaryText)
-                    CoinImageView(coin: vm.coin)
-                        .frame(width: 25, height: 25)
-                }
+                navigaitonBarTrailingItems
             }
         }
     }
@@ -118,5 +112,15 @@ extension DetailView {
 
                 }
             })
+    }
+
+    private var navigaitonBarTrailingItems: some View {
+        HStack {
+            Text(vm.coin.symbol.uppercased())
+                .font(.headline)
+                .foregroundColor(Color.theme.secondaryText)
+            CoinImageView(coin: vm.coin)
+                .frame(width: 25, height: 25)
+        }
     }
 }
