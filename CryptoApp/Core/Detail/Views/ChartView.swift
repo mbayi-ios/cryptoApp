@@ -30,6 +30,15 @@ struct ChartView: View {
             chartView
                 .frame(height: 200)
                 .background(chartBackground)
+                .overlay(
+                    VStack {
+                        Text(maxY.formattedWithAbbreviations())
+                        Spacer()
+                        Text(((maxY + minY) / 2 ).formattedWithAbbreviations())
+                        Spacer()
+                        Text(minY.formattedWithAbbreviations())
+                    }, alignment: .leading
+                )
         }
     }
 }
