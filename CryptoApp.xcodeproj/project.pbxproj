@@ -45,6 +45,7 @@
 		89C0D69428476B8600C9BF04 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D69328476B8600C9BF04 /* StatisticView.swift */; };
 		89C0D69628476C8A00C9BF04 /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D69528476C8A00C9BF04 /* StatisticModel.swift */; };
 		89C0D6982847834800C9BF04 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D6972847834700C9BF04 /* HomeStatsView.swift */; };
+		89CFF649285F498000004FE9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF648285F498000004FE9 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		89C0D69328476B8600C9BF04 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		89C0D69528476C8A00C9BF04 /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		89C0D6972847834700C9BF04 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		89CFF648285F498000004FE9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				8941D8E62844F56700885CCA /* Double.swift */,
 				89C0D68F2847515400C9BF04 /* UIApplication.swift */,
 				8942F3ED285F296B006CAC5C /* Date.swift */,
+				89CFF648285F498000004FE9 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				8915519C2848B371006434A2 /* MarketDataService.swift in Sources */,
 				892BA7F5282EAD0800AE3AEB /* CircleButtonAnimationView.swift in Sources */,
 				8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */,
+				89CFF649285F498000004FE9 /* String.swift in Sources */,
 				8941D8E52844E2EB00885CCA /* PreviewProvider.swift in Sources */,
 				8915519E2848D06C006434A2 /* PortfolioView.swift in Sources */,
 				8941D8E72844F56700885CCA /* Double.swift in Sources */,
