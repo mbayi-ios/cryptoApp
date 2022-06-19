@@ -9,13 +9,15 @@ import SwiftUI
 
 struct ChartView: View {
 
-    let data: [Double]
-    let maxY: Double
-    let minY: Double
+    private let data: [Double]
+    private let maxY: Double
+    private let minY: Double
 
-    let lineColor: Color
-    let startingDate: Date
-    let endingDate: Date
+    private let lineColor: Color
+    private let startingDate: Date
+    private let endingDate: Date
+
+    @State private var percentage: CGFloat = 0
 
     init(coin: CoinModel) {
         data = coin.sparklineIn7D?.price ?? []
@@ -38,8 +40,15 @@ struct ChartView: View {
                 .overlay(chartYAxis, alignment: .leading)
 
             chartDateLabels
-
-
+        }
+        .font(.caption)
+        .foregroundColor(Color.theme.secondaryText)
+        .onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                withAnimation(.linear(duration: 3.0)) {
+                    percentage = 1.0
+                }
+            }
         }
     }
 }
@@ -72,6 +81,7 @@ extension ChartView {
                 }
 
             }
+            .trim(from: 0, to: percentage)
             .stroke(lineColor, style: StrokeStyle(lineWidth: 2, lineCap: .round, lineJoin: .round))
         }
     }
