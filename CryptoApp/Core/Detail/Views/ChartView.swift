@@ -28,7 +28,7 @@ struct ChartView: View {
         lineColor = priceChange > 0 ? Color.theme.green : Color.theme.red
 
         endingDate = Date(coinGeckoString: coin.lastUpdated ?? "")
-        startingDate = endingDate.addingTimeInterval(-7 * 24 * 60 * 60)
+        startingDate = endingDate.addingTimeInterval(-7*24*60*60)
     }
 
 
