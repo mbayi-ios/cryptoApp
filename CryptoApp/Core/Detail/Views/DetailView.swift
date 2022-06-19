@@ -166,7 +166,7 @@ extension DetailView {
 
             if let redditString = vm.redditURL,
                let url = URL(string: redditString){
-                Link("Reddite", destination: url)
+                Link("Reddit", destination: url)
             }
         }
         .accentColor(.blue)
