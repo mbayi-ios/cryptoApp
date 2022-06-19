@@ -18,7 +18,10 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                swiftfulThinking
+                swiftfulThinkingSection
+                coinGeckoSection
+                developerSection
+                applicationSection
             }
             .font(.headline)
             .accentColor(.blue)
@@ -40,7 +43,7 @@ struct SettingsView_Previews: PreviewProvider {
 }
 
 extension SettingsView{
-    private var swiftfulThinking: some View {
+    private var swiftfulThinkingSection: some View {
         Section(header: Text("Swiftful Thinking")) {
             VStack(alignment: .leading) {
                 Image("logo")
@@ -57,6 +60,55 @@ extension SettingsView{
 
             Link("Subscribe on his youtube channel", destination: youtubeURL)
             Link("Support his coffee acdiction", destination: youtubeURL)
+        }
+    }
+
+    private var coinGeckoSection: some View {
+        Section(header: Text("Coin Gecko")) {
+            VStack(alignment: .leading) {
+                Image("coingecko")
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                Text("The cryptocurrency data is usd in this app comes from a free API from coinGecko! Prices may be slightly delayed!")
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.theme.accent)
+            }
+            .padding(.vertical)
+
+            Link("Visit Coin Gecko URL", destination: coingeckoURL)
+
+        }
+    }
+
+    private var developerSection: some View {
+        Section(header: Text("Developer")) {
+            VStack(alignment: .leading) {
+                Image("logo")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                Text("Developed by Nick, it uses swift UI, the project benefits from multithreading, publishers/subscribers, data persistance")
+                    .font(.callout)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color.theme.accent)
+            }
+            .padding(.vertical)
+
+            Link("Visit my Website", destination: personalURL)
+
+        }
+    }
+
+    private var applicationSection: some View {
+        Section(header: Text("Application")) {
+            Link("Visit my Website", destination: defaultURL)
+            Link("Visit my Website", destination: defaultURL)
+            Link("Visit my Website", destination: defaultURL)
+
         }
     }
 }
