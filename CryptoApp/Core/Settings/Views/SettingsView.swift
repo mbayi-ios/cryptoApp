@@ -8,20 +8,41 @@
 import SwiftUI
 
 struct SettingsView: View {
+
+    let defaultURL = URL(string: "https://www.google.com")!
+    let youtubeURL = URL(string: "https://www.youtube.come/c/swiftfulthing")!
+    let coffeeURL = URL(string: "https://www.google.com")!
+    let coingeckoURL = URL(string: "https://www.google.com")!
+    let personalURL = URL(string: "https://www.google.com")!
+
     var body: some View {
         NavigationView {
             List {
-                Text("Hi")
-                Section(header: Text("header"), footer: Text("footer")) {
-                    Text("Hi")
-                    Text("Hi")
+                Section(header: Text("Swiftful Thinking")) {
+                    VStack(alignment: .leading) {
+                        Image("logo")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+
+                        Text("This app was made by following a swiftful thinking course on youtube. It uses MVVM Architecture, Combine, and CoreData!")
+                            .font(.callout)
+                            .fontWeight(.medium)
+                            .foregroundColor(Color.theme.accent)
+                    }
+                    .padding(.vertical)
+
+                    Link("Subscribe on his youtube channel", destination: youtubeURL)
+                    Link("Support his coffee acdiction", destination: youtubeURL)
                 }
             }
+            .font(.headline)
+            .accentColor(.blue)
             .listStyle(GroupedListStyle())
             .navigationTitle("settngs")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
-                    XmarkButton()
+                    //XmarkButton()
                 }
             }
         }
