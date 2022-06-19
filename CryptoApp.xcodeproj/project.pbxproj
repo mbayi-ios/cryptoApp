@@ -39,6 +39,7 @@
 		8941D8F6284532E600885CCA /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941D8F5284532E600885CCA /* CoinImageViewModel.swift */; };
 		8941D8F828454CDD00885CCA /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8941D8F728454CDD00885CCA /* LocalFileManager.swift */; };
 		8942F3EC285F202A006CAC5C /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942F3EB285F202A006CAC5C /* ChartView.swift */; };
+		8942F3EE285F296B006CAC5C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8942F3ED285F296B006CAC5C /* Date.swift */; };
 		89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D68D28474A9900C9BF04 /* SearchBarView.swift */; };
 		89C0D6902847515400C9BF04 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D68F2847515400C9BF04 /* UIApplication.swift */; };
 		89C0D69428476B8600C9BF04 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C0D69328476B8600C9BF04 /* StatisticView.swift */; };
@@ -80,6 +81,7 @@
 		8941D8F5284532E600885CCA /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		8941D8F728454CDD00885CCA /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		8942F3EB285F202A006CAC5C /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		8942F3ED285F296B006CAC5C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		89C0D68D28474A9900C9BF04 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		89C0D68F2847515400C9BF04 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		89C0D69328476B8600C9BF04 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				8941D8E42844E2EB00885CCA /* PreviewProvider.swift */,
 				8941D8E62844F56700885CCA /* Double.swift */,
 				89C0D68F2847515400C9BF04 /* UIApplication.swift */,
+				8942F3ED285F296B006CAC5C /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				8941D8E32844E26E00885CCA /* CoinRowView.swift in Sources */,
 				8941D8E9284502C100885CCA /* HomeViewModel.swift in Sources */,
 				892BA7DC282E74D100AE3AEB /* ContentView.swift in Sources */,
+				8942F3EE285F296B006CAC5C /* Date.swift in Sources */,
 				8941D8F828454CDD00885CCA /* LocalFileManager.swift in Sources */,
 				8915519A2848AE83006434A2 /* MarketDataModel.swift in Sources */,
 				892BA7EF282E834E00AE3AEB /* HomeView.swift in Sources */,
