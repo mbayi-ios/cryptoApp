@@ -48,6 +48,7 @@
 		89CFF649285F498000004FE9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF648285F498000004FE9 /* String.swift */; };
 		89CFF64D285F534F00004FE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF64C285F534F00004FE9 /* SettingsView.swift */; };
 		89CFF651285F6F1400004FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CFF650285F6F1400004FE9 /* LaunchScreen.storyboard */; };
+		89CFF653285F72DE00004FE9 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFF652285F72DE00004FE9 /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		89CFF648285F498000004FE9 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		89CFF64C285F534F00004FE9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		89CFF650285F6F1400004FE9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89CFF652285F72DE00004FE9 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				89CFF650285F6F1400004FE9 /* LaunchScreen.storyboard */,
+				89CFF652285F72DE00004FE9 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				892BA7DA282E74D100AE3AEB /* CryptoAppApp.swift in Sources */,
 				89C0D6902847515400C9BF04 /* UIApplication.swift in Sources */,
 				892BA7F3282E85DF00AE3AEB /* CircleButtonView.swift in Sources */,
+				89CFF653285F72DE00004FE9 /* LaunchView.swift in Sources */,
 				892BA7E9282E7E0700AE3AEB /* Color.swift in Sources */,
 				89C0D68E28474A9900C9BF04 /* SearchBarView.swift in Sources */,
 				8931B6D5285624E00029E455 /* DetailView.swift in Sources */,
