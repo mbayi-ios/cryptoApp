@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
 
+    @Environment(\.presentationMode) var presentationMode
+
     let defaultURL = URL(string: "https://www.google.com")!
     let youtubeURL = URL(string: "https://www.youtube.come/c/swiftfulthing")!
     let coffeeURL = URL(string: "https://www.google.com")!
@@ -29,7 +31,7 @@ struct SettingsView: View {
             .navigationTitle("settngs")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading){
-                    //XmarkButton()
+                    XmarkButton(presentationMode: presentationMode)
                 }
             }
         }
@@ -58,8 +60,8 @@ extension SettingsView{
             }
             .padding(.vertical)
 
-            Link("Subscribe on his youtube channel", destination: youtubeURL)
-            Link("Support his coffee acdiction", destination: youtubeURL)
+            Link("Subscribe on his youtube channel🥳", destination: youtubeURL)
+            Link("Support his coffee acdiction ☕️", destination: youtubeURL)
         }
     }
 
@@ -78,7 +80,7 @@ extension SettingsView{
             }
             .padding(.vertical)
 
-            Link("Visit Coin Gecko URL", destination: coingeckoURL)
+            Link("Visit Coin Gecko URL🦎 ", destination: coingeckoURL)
 
         }
     }
@@ -98,7 +100,7 @@ extension SettingsView{
             }
             .padding(.vertical)
 
-            Link("Visit my Website", destination: personalURL)
+            Link("Visit my Website🌎", destination: personalURL)
 
         }
     }
