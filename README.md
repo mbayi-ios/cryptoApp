@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-21
-- Adding custom line chart to display historical Price Data
+## Video-24
+- App Icon, Launch Screen, and Launch Animation
