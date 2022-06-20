@@ -37,7 +37,19 @@ struct HomeView: View {
                 }
 
                 if showPortfolio {
-                    portfolioCoinsList
+                    ZStack(alignment: .top) {
+                        if vm.portfolioCoins.isEmpty && vm.searchText.isEmpty {
+                            Text("You havent added any coins to your portfolio yet. Click the + button to get started 🧐!")
+                                .font(.callout)
+                                .foregroundColor(Color.theme.accent)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .padding(50)
+                        } else {
+                            portfolioCoinsList
+                        }
+                    }
+
                         .transition(.move(edge: .trailing))
                 }
 
