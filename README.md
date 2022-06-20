@@ -1,4 +1,4 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
-## Video-24
-- App Icon, Launch Screen, and Launch Animation
+## Video-25
+- Adding final optimizations on the code
