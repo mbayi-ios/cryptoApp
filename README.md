@@ -1,5 +1,6 @@
 # cryptoApp
 using switftUI, MVVM, coreData, API Request
+
 ## Video-2
 - HomeView and Custom Header at the top of the view
 - We usually use the navigationBar as just the default header at the top of our screen
